@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 
 public class HelloForm extends HttpServlet {
 
+    // Method to handle GET method request.
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Set response content type
         response.setContentType("text/html");
@@ -28,5 +29,10 @@ public class HelloForm extends HttpServlet {
                 + request.getParameter("last_name") + "\n" +
                 "</ul>\n" +
                 "</body></html>");
+    }
+
+    // Method to handle POST method request.
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request, response);
     }
 }
