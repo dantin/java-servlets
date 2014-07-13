@@ -7,9 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by 908869 on 7/11/2014.
- */
 public class CheckBox extends HttpServlet {
 
     // Method to handle GET method request.

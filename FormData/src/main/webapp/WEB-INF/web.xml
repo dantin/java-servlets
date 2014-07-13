@@ -25,4 +25,13 @@
         <url-pattern>/CheckBox</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ReadParams</servlet-name>
+        <servlet-class>com.demo2do.servlets.ReadParams</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadParams</servlet-name>
+        <url-pattern>/ReadParams</url-pattern>
+    </servlet-mapping>
 </web-app>
