@@ -34,4 +34,14 @@
         <servlet-name>ReadParams</servlet-name>
         <url-pattern>/ReadParams</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayHeader</servlet-name>
+        <servlet-class>com.demo2do.servlets.DisplayHeader</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplayHeader</servlet-name>
+        <url-pattern>/DisplayHeader</url-pattern>
+    </servlet-mapping>
 </web-app>
