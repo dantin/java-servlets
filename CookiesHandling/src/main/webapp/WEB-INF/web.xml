@@ -25,4 +25,14 @@
         <url-pattern>/ReadCookies</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteCookies</servlet-name>
+        <servlet-class>com.demo2do.servlets.DeleteCookies</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteCookies</servlet-name>
+        <url-pattern>/DeleteCookies</url-pattern>
+    </servlet-mapping>
+
 </web-app>
