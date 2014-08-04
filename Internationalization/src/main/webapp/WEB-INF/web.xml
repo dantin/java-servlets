@@ -24,4 +24,24 @@
         <servlet-name>DisplaySpanish</servlet-name>
         <url-pattern>/DisplaySpanish</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DateLocale</servlet-name>
+        <servlet-class>com.demo2do.servlets.DateLocale</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DateLocale</servlet-name>
+        <url-pattern>/DateLocale</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CurrencyLocale</servlet-name>
+        <servlet-class>com.demo2do.servlets.CurrencyLocale</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CurrencyLocale</servlet-name>
+        <url-pattern>/CurrencyLocale</url-pattern>
+    </servlet-mapping>
 </web-app>
