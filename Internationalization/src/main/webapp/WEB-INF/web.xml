@@ -15,4 +15,13 @@
         <url-pattern>/GetLocale</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DisplaySpanish</servlet-name>
+        <servlet-class>com.demo2do.servlets.DisplaySpanish</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplaySpanish</servlet-name>
+        <url-pattern>/DisplaySpanish</url-pattern>
+    </servlet-mapping>
 </web-app>
