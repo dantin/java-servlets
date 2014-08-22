@@ -3,8 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-    <display-name>Hello Servlets</display-name>
+    <display-name>Servlets</display-name>
 
+    <!-- Hello Servlets -->
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.demo2do.servlets.helloservlets.HelloServlet</servlet-class>
@@ -14,5 +15,37 @@
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello-servlets/HelloServlet</url-pattern>
     </servlet-mapping>
+
+    <!-- Form Data -->
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>com.demo2do.servlets.formdata.HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/form-data/HelloForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckBox</servlet-name>
+        <servlet-class>com.demo2do.servlets.formdata.CheckBox</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CheckBox</servlet-name>
+        <url-pattern>/form-data/CheckBox</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadParams</servlet-name>
+        <servlet-class>com.demo2do.servlets.formdata.ReadParams</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadParams</servlet-name>
+        <url-pattern>/form-data/ReadParams</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
