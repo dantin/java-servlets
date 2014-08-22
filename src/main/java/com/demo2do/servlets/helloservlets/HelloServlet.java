@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- *  Extend HttpServlet class
+ * Extend HttpServlet class
  */
 public class HelloServlet extends HttpServlet {
 

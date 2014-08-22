@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Get parameter from request
+ */
 public class HelloForm extends HttpServlet {
 
     // Method to handle GET method request.

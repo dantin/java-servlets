@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Passing Checkbox Data to Servlet Program
+ */
 public class CheckBox extends HttpServlet {
 
     // Method to handle GET method request.

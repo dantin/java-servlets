@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
+/**
+ * Reading All Form Parameters
+ */
 public class ReadParams extends HttpServlet {
 
     // Method to handle GET method request.
@@ -27,13 +30,13 @@ public class ReadParams extends HttpServlet {
                 "<h1 align=\"center\">" + title + "</h1>\n" +
                 "<table width=\"100%\" border=\"1\" align=\"center\">\n" +
                 "<tr bgcolor=\"#949494\">\n" +
-                "<th>Param Name</th><th>Param Value(s)</th>\n"+
+                "<th>Param Name</th><th>Param Value(s)</th>\n" +
                 "</tr>\n");
 
         Enumeration paramNames = request.getParameterNames();
 
-        while(paramNames.hasMoreElements()) {
-            String paramName = (String)paramNames.nextElement();
+        while (paramNames.hasMoreElements()) {
+            String paramName = (String) paramNames.nextElement();
             out.print("<tr><td>" + paramName + "</td>\n<td>");
             String[] paramValues =
                     request.getParameterValues(paramName);
@@ -47,7 +50,7 @@ public class ReadParams extends HttpServlet {
             } else {
                 // Read multiple valued data
                 out.println("<ul>");
-                for(int i=0; i < paramValues.length; i++) {
+                for (int i = 0; i < paramValues.length; i++) {
                     out.println("<li>" + paramValues[i]);
                 }
                 out.println("</ul>");
