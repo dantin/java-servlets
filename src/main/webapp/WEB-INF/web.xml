@@ -47,5 +47,15 @@
         <url-pattern>/form-data/ReadParams</url-pattern>
     </servlet-mapping>
 
+    <!-- Client HTTP Request -->
+    <servlet>
+        <servlet-name>DisplayHeader</servlet-name>
+        <servlet-class>com.demo2do.servlets.clientrequest.DisplayHeader</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DisplayHeader</servlet-name>
+        <url-pattern>/client-request/DisplayHeader</url-pattern>
+    </servlet-mapping>
 
 </web-app>
