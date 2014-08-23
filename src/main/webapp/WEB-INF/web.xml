@@ -58,4 +58,15 @@
         <url-pattern>/client-request/DisplayHeader</url-pattern>
     </servlet-mapping>
 
+    <!-- Server HTTP Response -->
+    <servlet>
+        <servlet-name>Refresh</servlet-name>
+        <servlet-class>com.demo2do.servlets.serverresponse.Refresh</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Refresh</servlet-name>
+        <url-pattern>/server-response/Refresh</url-pattern>
+    </servlet-mapping>
+
 </web-app>
