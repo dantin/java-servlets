@@ -69,4 +69,15 @@
         <url-pattern>/server-response/Refresh</url-pattern>
     </servlet-mapping>
 
+    <!-- Http Status Codes -->
+    <servlet>
+        <servlet-name>ShowError</servlet-name>
+        <servlet-class>com.demo2do.servlets.httpcodes.ShowError</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowError</servlet-name>
+        <url-pattern>/http-codes/ShowError</url-pattern>
+    </servlet-mapping>
+
 </web-app>
