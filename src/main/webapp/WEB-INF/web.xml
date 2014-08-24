@@ -80,4 +80,18 @@
         <url-pattern>/http-codes/ShowError</url-pattern>
     </servlet-mapping>
 
+    <!-- Writing Filters -->
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>com.demo2do.servlets.writingfilters.LogFilter</filter-class>
+        <init-param>
+            <param-name>test-param</param-name>
+            <param-value>Initialization Paramter</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/writing-filters/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
